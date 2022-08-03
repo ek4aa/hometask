@@ -1,8 +1,13 @@
 Rails.application.routes.draw do
-  get 'rooms/index'
-  devise_for :users
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  default_url_options host: 'localhost:3000'
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  resources :rooms do
+    resources :messages
+  end
+  root 'pages#home'
+  devise_for :users, controllers: {
+    sessions: 'users/sessions',
+    registrations: 'users/registrations'
+  }
+  get 'user/:id', to: 'users#show', as: 'user'
 end
