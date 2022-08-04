@@ -6,7 +6,7 @@
     <%= link_to "Start Chatting", rooms_path, turbo:'false' %>
     <%= link_to "Edit Account", edit_user_registration_path %>
     <%= button_to "Logout", destroy_user_session_path, method: :delete %>
-    <%= image_tag(current_user.pfp_thumbnail) if current_user.pfp.attached?%>
+    
   <% else %>
     <%= link_to "Sign up", new_user_registration_path %>
     <%= link_to "Login", new_user_session_path %>

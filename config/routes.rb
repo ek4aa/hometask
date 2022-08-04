@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'messages/index'
   default_url_options host: 'localhost:3000'
 
   resources :rooms do
