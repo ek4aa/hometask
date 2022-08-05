@@ -40,5 +40,5 @@ to run this project you need to have:
 ## not much functional work done on the views, still building from the back and running in console.
 
 ![screenshot](./app/assets/images/chat-1.png)
-![screenshot](./app/assets/images/screenshot(45).png)
-![screenshot](./app/assets/images/scrrenshot(46).png)
+![screenshot](./app/assets/images/Screenshot(45).png)
+![screenshot](./app/assets/images/Screenshot(46).png)
