@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :controllers
   get 'messages/index'
   default_url_options host: 'localhost:3000'
 
